@@ -1,11 +1,16 @@
 # Fixed Broadband Coverage Analysis (2019 - 2023)
 
 # Project Background
-This project analyzes broadband coverage across the United Kingdom from 2019 to 2023, focusing on key metrics such as Superfast Broadband (SFBB), Ultrafast Broadband (UFBB), Full Fibre, and Gigabit availability. Using data from Ofcom, the aim was to assess broadband accessibility, identify trends, and highlight disparities across local authority areas.
+This project analyzes broadband coverage across the United Kingdom from 2019 to 2023, focusing on key metrics such as Superfast Broadband (SFBB), Ultrafast Broadband (UFBB), Full Fibre, and Gigabit availability. The primary goals is to evaluate broadband accessibility, identify trends, and uncover disparities across local authority areas. Data from Ofcom's broadband report was utilised, ensuring the findings are grounded in reliable sources.
 
 # Data Structure & Initial Checks
 
-The dataset was initially loaded in DataFrame due to faster processing times for data cleaning tasks. The data was inspected for anomalies, cleaned and then stored in MongoDB database with 1870 records spanning 374 local authority areas over five years. The data was loaded into a Pandas DataFrame for further analysis.
+The dataset was derived from Ofcom's annual reports and structured to span 374 local authorities over five years, resulting in 1870 records. Key steps in data preparation included: 
+
+* **Initial Inspection:** Ensured data completeness and absence of duplicates.
+* **Cleaning:** Addressed inconsistencies across CSV files, such as varying column names and ambiguous data.
+* **Storage:** Data was structured and stored in a MongoDB database for accessibility and further analysis. Columns included broadband availability metrics, local authority names and codes.
+* **Summary:** The dataset was analysed using Pandas to verify integrity, showing clean and usable records with proper alignment across years.
 
 # Executive Summary
 
@@ -13,12 +18,16 @@ The dataset was initially loaded in DataFrame due to faster processing times for
 
 #### Overall Trends
 
-Broadband availability across the UK has improved significantly between 2019 and 2023. SFBB coverage grew from 93.62% in 2019 to 96.07% in 2023. Full Fibre availability experienced a sharp increase, rising from 8.59% to 47.6%. Gigabit broadband availability showed the most dramatic growth, increasing from 8.5% to nearly 70%.
-Premises below USO declined substantially, reflecting improvements in access to basic broadband speeds.
+* Broadband availability across the UK has improved significantly between 2019 and 2023.
+* SFBB coverage grew from 93.62% in 2019 to 96.07% in 2023.
+* Full Fibre availability experienced a sharp increase, rising from 8.59% to 47.6%.
+* Gigabit broadband availability showed the most dramatic growth, increasing from 8.5% to nearly 70%.
+* Premises below USO declined substantially, reflecting improvements in access to basic broadband speeds.
 
 #### Regional Insights
 
-Urban areas generally have higher broadband speeds and availability. Rural areas, especially the Orkney and Shetland Islands, show significant gaps in coverage.
+* Urban areas generally have higher broadband speeds and availability.
+* Rural areas, especially the Orkney and Shetland Islands, show significant gaps in coverage.
 
 # Insights Deep Dive
 ### Regional Trends
@@ -43,9 +52,18 @@ Geographical challenges such as their remote locations and higher infrastructure
 
 * **Full Fibre Availability:** A parallel growth to Gigabit broadband was observed, with availability increasing from 8.59% in 2019 to 47.6% in 2023. Full Fibre's increasing importance is evident in its role as the backbone for Gigabit-capable networks.
 
+<div align="center">
+    <img src=".//trends_in_broadband_coverage_over_period.png" alt="Description of Image" width="85%">
+</div>
+
+
 ### Coverage Gaps
 
-* **Premises Beow USO:** The percentage of premises unable to receive broadband speeds below 2Mbit/s, 5Mbit/s, and 10Mbit/s has steadily declined over the years. Premises below the 10Mbit/s threshold decreased from 2.1% in 2019 to 1.24% in 2023, highlighting ongoing progress but leaving notable gaps in underserved regions.
+* **Premises Below USO:** The percentage of premises unable to receive broadband speeds below 2Mbit/s, 5Mbit/s, and 10Mbit/s has steadily declined over the years. Premises below the 10Mbit/s threshold decreased from 2.1% in 2019 to 1.24% in 2023, highlighting ongoing progress but leaving notable gaps in underserved regions.
+
+<div align="center">
+    <img src="./trends_in_premises_unable_to_receive_low_broadband_speeds.png" alt="Description of Image" width="70%">
+</div>
 
 * **Islands and Remote Regions:** Island regions such as Orkney and Shetland face persistent challenges, with logistical and financial barriers to deploying high-speed broadband. These areas also report limited Full Fibre and Gigabit availability, reflecting infrastructure disparities.
 
