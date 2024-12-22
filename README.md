@@ -43,7 +43,6 @@ Geographical challenges such as their remote locations and higher infrastructure
     <img src="./top_10_areas_below_USO.png" alt="Description of Image" width="85%">
 </div>
 
-
 ### Broadband Type Analysis
 
 * **Superfast Broadband (SFBB):** Nearly universal, increasing from 93.62% in 2019 to 96.07% in 2023. This modest growth reflects a mature infrastructure and focuses on improving connectivity quality rather than expanding the network. Despite high coverage, rural areas still report inconsistencies in meeting the 30Mbit/s threshold.
@@ -65,6 +64,9 @@ Geographical challenges such as their remote locations and higher infrastructure
 
 * **Premises Below USO:** The percentage of premises unable to receive broadband speeds below 2Mbit/s, 5Mbit/s, and 10Mbit/s has steadily declined over the years. Premises below the 10Mbit/s threshold decreased from 2.1% in 2019 to 1.24% in 2023, highlighting ongoing progress but leaving notable gaps in underserved regions.
 
+<div align="center">
+    <img src="./trends_in_premises_unable_to_receive_low_broadband_speeds.png" alt="Description of Image" width="70%">
+</div>
 
 * **Islands and Remote Regions:** Island regions such as Orkney and Shetland face persistent challenges, with logistical and financial barriers to deploying high-speed broadband. These areas also report limited Full Fibre and Gigabit availability, reflecting infrastructure disparities.
 
