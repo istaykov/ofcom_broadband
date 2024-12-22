@@ -34,9 +34,6 @@ The dataset was derived from Ofcom's annual reports and structured to span 374 l
 
 * **Aberdeen City:** Full Fibre availability surged by 6.5 times, growing from 16,410 premises in 2019 to 107,315 in 2023. Corresponding decreases were observed in premises below the Universal Service Obligation (USO) threshold, dropping nearly 5 times (189 in 2019 to 40 in 2023). This growth indicates robust infrastructure investment and a targeted effort to expand access to high-speed internet.
 
-<div align="center">
-    <img src="./aberdeen_city_full_fibre_vs_below_uso.jpg" alt="Description of Image" width="85%">
-</div>
 
 * **York:** In contrast to Aberdeen, York showed modest growth in broadband infrastructure. Full Fibre availability increased by just 1.47 times (from 43,077 premises in 2019 to 63,736 in 2023). Interestingly, York experienced a reduction in matched premises, with 1,966 fewer properties between 2019 and 2023. This may be due to urban redevelopment or shifting population dynamics.
 
