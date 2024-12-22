@@ -1,14 +1,37 @@
 # Fixed Broadband Coverage Analysis (2019 - 2023)
 
 # Project Background
-This project analyzes broadband coverage across the United Kingdom from 2019 to 2023, focusing on key metrics such as Superfast Broadband (SFBB), Ultrafast Broadband (UFBB), Full Fibre, and Gigabit availability. The primary goals is to evaluate broadband accessibility, identify trends, and uncover disparities across local authority areas. Data from Ofcom's broadband report was utilised, ensuring the findings are grounded in reliable sources.
+
+This project examines the state of fixed broadband coverage across the UK between 2019 and 2023. The aim is to explore regional disparities, identify trends in broadband availability, and the impact of infrastructure investments on access to high-speed internet. Key metrics include:
+
+* **Superfast Broadband (SFBB)** availability.
+* **Ultrafast Broadband (UFBB)** availability.
+* **Full Fibre and Gigabit Broadband** deployment.
+* Premises below the Universal Service Obligation (USO) threshold.
+
+Through this analysis, the project aims to identify patterns, gaps, and policy implications in broadband accessibility, contributing to efforts to bridge the digital divide.
 
 # Data Structure & Initial Checks
 
-The dataset was derived from Ofcom's annual reports and structured to span 374 local authorities over five years, resulting in 1870 records. Key steps in data preparation included: 
+**Data Sources:**
+* Fixed broadband coverage data was sourced from Ofcom datasets spanning 2019 to 2023.
+* The datasets include 374 local authorities in the UK, with 1,870 records after merging across five years.
 
-* **Initial Inspection:** Ensured data completeness and absence of duplicates.
-* **Cleaning:** Addressed inconsistencies across CSV files, such as varying column names and ambiguous data.
+**Initial Data Checks:**
+* **Consistency:**
+* Each dataset contains 374 entries corresponding to unique local authorities.
+* All datasets were merged, verified for duplication, and augmented with a year column for temporal analysis.
+
+* **Column Insights:**
+* Key columns included broadband availability percentages, premises counts for SFBB, UFBB, Full Fibre, and premises below USO thresholds.
+* Columns were standardized to ensure compatibility across years.
+
+* **Data Cleaning Steps:**
+1. * **Initial Inspection:** Ensured data completeness and absence of duplicates.
+2. Removed inconsistencies in column naming and ambiguous data and ensured uniform formatting.
+3. Verified data completeness by checking for missing values or anomalies.
+4. Extracted meaningful subsets for targeted analysis, such as Full Fibre availability and premises below USO.
+ 
 * **Storage:** Data was structured and stored in a MongoDB database for accessibility and further analysis. Columns included broadband availability metrics, local authority names and codes.
 * **Summary:** The dataset was analysed using Pandas to verify integrity, showing clean and usable records with proper alignment across years.
 
@@ -16,26 +39,58 @@ The dataset was derived from Ofcom's annual reports and structured to span 374 l
 
 ### Overview of Findings
 
-#### Overall Trends
+#### National Trends:
 
 * Broadband availability across the UK has improved significantly between 2019 and 2023.
-* SFBB coverage grew from 93.62% in 2019 to 96.07% in 2023.
-* Full Fibre availability experienced a sharp increase, rising from 8.59% to 47.6%.
-* Gigabit broadband availability showed the most dramatic growth, increasing from 8.5% to nearly 70%.
+* SFBB coverage grew from **93.62% in 2019** to **96.07% in 2023**.
+* UFBB availability grew significantly from **47% to 70%** over the same period.
+* Full Fibre availability experienced a sharp increase, rising from **8.59% to 47.6%**.
+* Gigabit broadband availability showed the most dramatic growth, increasing from **8.5% to nearly 70%**, reflecting policy-driven investment.
 * Premises below USO declined substantially, reflecting improvements in access to basic broadband speeds.
 
-#### Regional Insights
+#### Regional Disparities:
 
 * Urban areas generally have higher broadband speeds and availability.
 * Rural areas, especially the Orkney and Shetland Islands, show significant gaps in coverage.
+* Areas like **Kingston upon Hull** and **Convetry** lead in Full Fibre and Gigabit coverage.
+* Rural and island regions such as **Orkney Islands** and **Isles of Scilly** remain underserved, with minimal Full Fibre and Gigabit access.
+
+#### Underserved Communities:
+* **Orkney Islands**: SFBB availability improved from **65% in 2019** to **68.5% in 2023**, highlighting slow progress.
+* Premises below USO thresholds decreased significantly across all regions after 2020.
+
+#### Case Studies:
+* **Aberdeen City**: Full Fibre availability surged **6.5 times**, from **16,410 in 2019** to **107,315 in 2023**.
+* **York**: Showed a more modest increase of **1.47 times** in Full Fibre availability and a decline in matched premises by 1,966.
 
 # Insights Deep Dive
+
+### Regional Observations:
+1. **Top-Performing Areas:**
+* **Kingston upon Hull**: Nearly 100% coverage for Full Fibre and Gigabit broadband.
+* **Coventry**: Demonstrated significant growth in UFBB and Gigabit broadband.
+
+2. Least-Performing Areas:
+* **Isles of Scilly**: Only **1.8% coverage for Full Fibre and Gigabit broadband**.
+* **Copeland and Orkney Islands**: Limited infrastructure progress, reflecting logistical challenges.
+
+Broadband in Underserved Areas:
+Investments in rural areas remain insufficient, as demonstrated by slow growth in regions like Argyll and Bute.
+Digital inclusion policies need to prioritize these underserved communities.
+
 ### Regional Trends
 
-* **Aberdeen City:** Full Fibre availability surged by 6.5 times, growing from 16,410 premises in 2019 to 107,315 in 2023. Corresponding decreases were observed in premises below the Universal Service Obligation (USO) threshold, dropping nearly 5 times (189 in 2019 to 40 in 2023). This growth indicates robust infrastructure investment and a targeted effort to expand access to high-speed internet.
+* **Aberdeen City:** **Full Fibre availability** surged by **6.5 times**, growing from **16,410 premises** in **2019** to **107,315** in **2023**. Corresponding decreases were observed in premises below the Universal Service Obligation (USO) threshold, dropping nearly **5 times (189 in 2019 to 40 in 2023)**. This growth indicates robust infrastructure investment and a targeted effort to expand access to high-speed internet.
 
+<div align="center">
+    <img src="./aberdeen_city_full_fibre_vs_below_uso.jpg" alt="Description of Image" width="85%">
+</div>
 
 * **York:** In contrast to Aberdeen, York showed modest growth in broadband infrastructure. Full Fibre availability increased by just 1.47 times (from 43,077 premises in 2019 to 63,736 in 2023). Interestingly, York experienced a reduction in matched premises, with 1,966 fewer properties between 2019 and 2023. This may be due to urban redevelopment or shifting population dynamics.
+
+<div align="center">
+    <img src="./full_fibre_availability_york_matched_premises.jpg" alt="Description of Image" width="100%">
+</div>
 
 * **Orkney and Shetland Islands:** These island regions lag significantly, with 16.7% and 16% of premises, respectively, unable to receive 10Mbit/s broadband speeds as of 2023.
 Geographical challenges such as their remote locations and higher infrastructure costs likely contribute to this disparity.
@@ -80,6 +135,12 @@ Factors contributing to this surge include remote work and education demands; re
 
 * **Policy Impacts:** Initiatives such as the Universal Service Obligation (USO), launched in 2020, correlate with increased focus on underserved areas. Legislation and funding have accelerated improvements, particularly in regions previously unable to meet basic speed thresholds.
 
+* **Geographic Influence: Coastal and island regions face higher deployment costs, resulting in slower progress.
+* Infrastructure Focus: Investments are concentrated in urban areas, creating significant disparities.
+
+Technological Trends:
+A clear shift toward next-generation broadband (Full Fibre and Gigabit), with slower improvements in older infrastructure like SFBB.
+
 ### Reccomendations
 
 * **Infrastructure Investments:** Prioritize underserved regions, particularly rural and island communities, to reduce digital inequality. Expand Full Fibre and Gigabit coverage to align with urban availability levels.
@@ -88,10 +149,26 @@ Factors contributing to this surge include remote work and education demands; re
 
 * **Monitoring and Reporting:** Establish regular updates to track progress and assess policy effectiveness. Enhance data granularity to understand local challenges better.
 
+* Targeted Investments:
+Incentivize private companies to expand infrastructure in underserved regions.
+Provide subsidies or government-led initiatives for rural and island communities.
+Policy Adjustments:
+Set ambitious regional targets for UFBB and Gigabit broadband to bridge the digital divide.
+Regularly monitor and report progress to ensure accountability.
+Future Focus:
+Prioritize underserved regions to ensure equitable access to next-generation broadband.
+Expand public-private partnerships to accelerate infrastructure deployment.
+
 ### Assumptions and Caveats
 
-* **Data Completeness:** Assumes the dataset fully represents the broadband availability landscape across the UK.
+* **Data Accuracy:** Some data points, particularly from earlier years, rely on estimations (e.g., UFBB availability in 2019).
 
 * **Urban vs. Rural Bias:** The analysis highlights that urban areas often show higher coverage due to cost-efficient infrastructure deployment.
   
 * **Limitations of Percentage Metrics:** While percentages normalize data for comparison, they may mask absolute disparities in larger or denser regions.
+
+* External Influences:
+Urban redevelopment and demographic shifts (e.g., York) may impact broadband coverage trends.
+Policy Impacts:
+
+Changes in legislation (e.g., USO launch in 2020) influence trends but may not reflect immediate infrastructure changes.
