@@ -39,6 +39,10 @@ The dataset was derived from Ofcom's annual reports and structured to span 374 l
 * **Orkney and Shetland Islands:** These island regions lag significantly, with 16.7% and 16% of premises, respectively, unable to receive 10Mbit/s broadband speeds as of 2023.
 Geographical challenges such as their remote locations and higher infrastructure costs likely contribute to this disparity.
 
+<div align="center">
+    <img src="./top_10_areas_below_USO.png" alt="Description of Image" width="85%">
+</div>
+
 
 ### Broadband Type Analysis
 
