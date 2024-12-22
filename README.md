@@ -7,7 +7,6 @@ This project examines the state of fixed broadband coverage across the UK betwee
 * **Superfast Broadband (SFBB)** availability.
 * **Ultrafast Broadband (UFBB)** availability.
 * **Full Fibre and Gigabit Broadband** deployment.
-* Premises below the Universal Service Obligation (USO) threshold.
 
 Through this analysis, the project aims to identify patterns, gaps, and policy implications in broadband accessibility, contributing to efforts to bridge the digital divide.
 
@@ -19,7 +18,7 @@ Through this analysis, the project aims to identify patterns, gaps, and policy i
 
 **Initial Data Checks:**
 * **Consistency:**
-* Each dataset contains 374 entries corresponding to unique local authorities.
+ _ Each dataset contains 374 entries corresponding to unique local authorities.
 * All datasets were merged, verified for duplication, and augmented with a year column for temporal analysis.
 
 * **Column Insights:**
@@ -66,17 +65,30 @@ Through this analysis, the project aims to identify patterns, gaps, and policy i
 # Insights Deep Dive
 
 ### Regional Observations:
+
+<div align="center">
+    <img src="./top_bottom_regions_uffbb_full_fibre_availability_2023.png.jpg" alt="Description of Image" width="85%">
+</div>
+
 1. **Top-Performing Areas:**
 * **Kingston upon Hull**: Nearly 100% coverage for Full Fibre and Gigabit broadband.
 * **Coventry**: Demonstrated significant growth in UFBB and Gigabit broadband.
+
+<div align="center">
+    <img src="./top_10_areas_for_ufbb_gigabit_availabiity.png" alt="Description of Image" width="85%">
+</div>
 
 2. Least-Performing Areas:
 * **Isles of Scilly**: Only **1.8% coverage for Full Fibre and Gigabit broadband**.
 * **Copeland and Orkney Islands**: Limited infrastructure progress, reflecting logistical challenges.
 
-Broadband in Underserved Areas:
-Investments in rural areas remain insufficient, as demonstrated by slow growth in regions like Argyll and Bute.
-Digital inclusion policies need to prioritize these underserved communities.
+<div align="center">
+    <img src="./bottom_10_areas_for_ufbb_gigabit_availability.png" alt="Description of Image" width="85%">
+</div>
+
+### Broadband in Underserved Areas:
+* Investments in rural areas remain insufficient, as demonstrated by slow growth in regions like Argyll and Bute.
+* Digital inclusion policies need to prioritize these underserved communities.
 
 ### Regional Trends
 
