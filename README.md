@@ -2,26 +2,32 @@
 
 ## Project Background
 
-This project analyses fixed broadband coverage across the UK from 2019 to 2023. By examining trends, regional disparities, and the impact of infrastructure investments, this study seeks to highlight patterns and gaps in broadband accesibility, contributing to efforts to bridge the digital divide. Key metrics include **Superfast Broadband (SFBB)**, **Ultrafast Broadband (UFBB)**, **Full Fibre**, and **Gigabit broadband coverage**. 
+This project analyses fixed broadband coverage in the UK from 2019 to 2023, examining trends, regional disparities and the impact of infrastructure investments. Key metrics include:
+
+* **Superfast Broadband (SFBB)**
+* **Ultrafast Broadband (UFBB)**
+* **Full Fibre**
+* **Gigabit broadband coverage**.
+
+This study aims to uncover patterns and gaps in broadband accessibility, contributing to efforts to bridge the digital divide.
 
 ## Data Sources and Methodology
 
 ### Data Sources
 
-The analysis is based on broadband coverage datasets provided by Ofcom, under the Open Government License v3.0. Data spans five years (2019-2023) and includes:
+The analysis is based on broadband coverage datasets provided by **Ofcom**, under the **Open Government License v3.0**. Data spans five years (2019-2023) and includes:
 
-* Files: Yearly CSV datasets for 374 UK local authorities.
-* Total Records: 1,870 data points post-cleaning and integration.
-* Key Metrics: SFBB, UFBB, Full Fibre availability, and premises below Universal Service Obligation (USO).
-* Aggregation: Data collected from over 70 fixed network and fixed wireless access (FWA) providers.
-* Snapshots: Annual snapshots (e.g., September 2020, May, 2023) were used for uniform temporal analysis.
+* **Files:** Yearly CSV datasets for **374 UK local authorities**.
+* **Total Records:** **1,870 data points** post-cleaning and integration.
+* **Key Metrics:** SFBB, UFBB, Full Fibre availability, and premises below Universal Service Obligation (USO).
+* **Providers:** Data collected from over **70 fixed network** and **fixed wireless access (FWA) providers**.
+* **Snapshots:** Annual snapshots (e.g., September 2020, May, 2023) were used for uniform temporal analysis.
 
 ### Limitations
 * Changes in reporting methods, such as the inability to identify superfast broadband coverage from FWA in rececnt years, limit direct year-over-year comparisons.
 * Some coverage metrics rely on provider-reported estimates, which may introduce minor innacuracies.
 
-
-**Key Columns in the Dataset**
+### Key Columns in the Dataset
 
 | Column Name                        | Description                                  | Relevance                           |
 |------------------------------------|----------------------------------------------|-------------------------------------|
@@ -31,44 +37,29 @@ The analysis is based on broadband coverage datasets provided by Ofcom, under th
 | `Full Fibre availability (% premises)` | % of premises with full fibre broadband coverage | Infrastructure modernization metric |
 | `Premises below USO`               | % of premises below 10Mbit/s download speed | Highlights underserved areas       |
 
-
-**Methodology**
-1. **Data Import and Cleaning**
+### Methodology
+1. #### Data Import and Cleaning
  * Imported data from CSV files using **Python's Pandas**.
  * Cleaned inconsistent column names and ambiguous data using custom Python scripts.
- * Ensured all datasets included a year column and were standardised across years.
- * Ensured consistent column naming and formatting.
- * Addressed null values and outliers.
- * Ensured data completeness and absence of duplicates.
- * Verified data completeness by checking for missing values or anomalies.
- * Extracted meaningful subsets for targeted analysis, such as Full Fibre availability and premises below USO.
-2. **Storage and Structure**
-* Cleaned data stored in a MongoDB database for accessbility.
-* Schema included key fields: broadband metrics, local authority details, and temporal indicators.
-3. **Exploratory Data Analysis (EDA)**
-* Utilised Python libraries (Matplotlib, Folium) to explore trends and visualise disparities.
+ * Standardised datasets across years, ensuring all included a consistent "year" column and consistent local area code throughout.
+ * Addressed null values, outliers, and ensured data completeness by resolving duplicates and filling gaps.
+ * Verified data integrity by checking for missing values and anomalies.
+ * Extracted targeted subsets for analysis, including Full Fibre Availability and premises below USO.
+   
+2. #### Storage and Structure
+* Stored cleaned data in **MongoDB** for accessibility.
+  
+3. #### Exploratory Data Analysis (EDA)
+* Utilised Python libraries (**Matplotlib**, **Folium**) to explore trends and visualise disparities.
 * Conducted grouping and aggregation to uncover temporal patterns in broadband availability.
 * Investigated trends in broadband availability and gaps.
 * Highlighted regional disparities through statistical summaries and visualisations.
-4. **Visualisation**
-* Developed maps to showcase regional gaps using Folium.
+  
+4. #### Visualisation
+* Developed maps to showcase regional gaps using **Folium**.
 * Created trend charts to illustrate growth in broadband types.
 
-**Initial Data Checks:**
-* **Consistency:**
- _ Each dataset contains 374 entries corresponding to unique local authorities.
-* All datasets were merged, verified for duplication, and augmented with a year column for temporal analysis.
-
-* **Column Insights:**
-* Key columns included broadband availability percentages, premises counts for SFBB, UFBB, Full Fibre, and premises below USO thresholds.
-* Columns were standardized to ensure compatibility across years.
-
-* **Data Cleaning Steps:**
-
-* **Storage:** Data was structured and stored in a MongoDB database for accessibility and further analysis. Columns included broadband availability metrics, local authority names and codes.
-* **Summary:** The dataset was analysed using Pandas to verify integrity, showing clean and usable records with proper alignment across years.
-
-# Executive Summary
+## Executive Summary
 
 ### Overview of Findings
 
@@ -84,7 +75,7 @@ The analysis is based on broadband coverage datasets provided by Ofcom, under th
 #### Regional Disparities:
 
 * Urban areas generally have higher broadband speeds and availability.
-* Rural areas, especially the Orkney and Shetland Islands, show significant gaps in coverage.
+* Rural areas, especially the **Orkney** and **Shetland Islands**, show significant gaps in coverage.
 * Areas like **Kingston upon Hull** and **Convetry** lead in Full Fibre and Gigabit coverage.
 * Rural and island regions such as **Orkney Islands** and **Isles of Scilly** remain underserved, with minimal Full Fibre and Gigabit access.
 
@@ -96,23 +87,23 @@ The analysis is based on broadband coverage datasets provided by Ofcom, under th
 * **Aberdeen City**: Full Fibre availability surged **6.5 times**, from **16,410 in 2019** to **107,315 in 2023**.
 * **York**: Showed a more modest increase of **1.47 times** in Full Fibre availability and a decline in matched premises by 1,966.
 
-# Insights Deep Dive
+## Insights Deep Dive
 
 ### Regional Observations:
+
+1. #### Top-Performing Areas:
+* **Kingston upon Hull**: Nearly 100% coverage for Full Fibre and Gigabit broadband.
+* **Coventry**: Demonstrated significant growth in UFBB and Gigabit broadband.
 
 <div align="center">
     <img src="./top_bottom_regions_uffbb_full_fibre_availability_2023.png.jpg" alt="Description of Image" width="85%">
 </div>
 
-1. **Top-Performing Areas:**
-* **Kingston upon Hull**: Nearly 100% coverage for Full Fibre and Gigabit broadband.
-* **Coventry**: Demonstrated significant growth in UFBB and Gigabit broadband.
-
 <div align="center">
     <img src="./top_10_areas_for_ufbb_gigabit_availabiity.png" alt="Description of Image" width="85%">
 </div>
 
-2. Least-Performing Areas:
+2. #### Least-Performing Areas:
 * **Isles of Scilly**: Only **1.8% coverage for Full Fibre and Gigabit broadband**.
 * **Copeland and Orkney Islands**: Limited infrastructure progress, reflecting logistical challenges.
 
@@ -121,7 +112,7 @@ The analysis is based on broadband coverage datasets provided by Ofcom, under th
 </div>
 
 ### Broadband in Underserved Areas:
-* Investments in rural areas remain insufficient, as demonstrated by slow growth in regions like Argyll and Bute.
+* Investments in rural areas remain insufficient, as demonstrated by slow growth in regions like **Argyll and Bute**.
 * Digital inclusion policies need to prioritize these underserved communities.
 
 ### Regional Trends
@@ -132,13 +123,13 @@ The analysis is based on broadband coverage datasets provided by Ofcom, under th
     <img src="./aberdeen_city_full_fibre_vs_below_uso.jpg" alt="Description of Image" width="85%">
 </div>
 
-* **York:** In contrast to Aberdeen, York showed modest growth in broadband infrastructure. Full Fibre availability increased by just 1.47 times (from 43,077 premises in 2019 to 63,736 in 2023). Interestingly, York experienced a reduction in matched premises, with 1,966 fewer properties between 2019 and 2023. This may be due to urban redevelopment or shifting population dynamics.
+* **York:** In contrast to Aberdeen, York showed modest growth in broadband infrastructure. Full Fibre availability increased by just **1.47 times** (from **43,077 premises** in **201**9 to **63,736** in **2023**). Interestingly, York experienced a reduction in matched premises, with 1,966 fewer properties between 2019 and 2023. This may be due to urban redevelopment or shifting population dynamics.
 
 <div align="center">
     <img src="./full_fibre_availability_york_matched_premises.jpg" alt="Description of Image" width="100%">
 </div>
 
-* **Orkney and Shetland Islands:** These island regions lag significantly, with 16.7% and 16% of premises, respectively, unable to receive 10Mbit/s broadband speeds as of 2023.
+* **Orkney and Shetland Islands:** These island regions lag significantly, with **16.7%** and **16%** of premises, respectively, unable to receive **10Mbit/s** broadband speeds as of 2023.
 Geographical challenges such as their remote locations and higher infrastructure costs likely contribute to this disparity.
 
 <div align="center">
@@ -147,15 +138,15 @@ Geographical challenges such as their remote locations and higher infrastructure
 
 ### Broadband Type Analysis
 
-* **Superfast Broadband (SFBB):** Nearly universal, increasing from 93.62% in 2019 to 96.07% in 2023. This modest growth reflects a mature infrastructure and focuses on improving connectivity quality rather than expanding the network. Despite high coverage, rural areas still report inconsistencies in meeting the 30Mbit/s threshold.
+* **Superfast Broadband (SFBB):** Nearly universal, increasing from **93.62%** in **2019** to **96.07%** in **2023**. This modest growth reflects a mature infrastructure and focuses on improving connectivity quality rather than expanding the network. Despite high coverage, rural areas still report inconsistencies in meeting the 30Mbit/s threshold.
 
-* **Ultrafast Broadband (UFBB):** Availability grew from 47% in 2019 to 70% in 2023, with the most significant annual increase (8.4%) observed between 2021 and 2022. The disparity between urban and rural areas is stark, as rural localities often struggle with cost-effective deployment.
+* **Ultrafast Broadband (UFBB):** Availability grew from **47%** in **2019** to **70%** in **2023**, with the most significant annual increase (**8.4%**) observed between **2021** and **2022**. The disparity between urban and rural areas is stark, as rural localities often struggle with cost-effective deployment.
 
-* **Ultrafast Broadband (100 Mbit/s+):** One of the fastest-growing segments, jumping from an estimated 49% (inferred) in 2019 to 71.81% in 2023. Steady annual growth of approximately 5.6% indicates ongoing infrastructure upgrades, with large-scale investments aligning with government initiatives for digital inclusion.
+* **Ultrafast Broadband (100 Mbit/s+):** One of the **fastest-growing segments**, jumping from an estimated **49%** (inferred) in **2019** to **71.81%** in **2023**. Steady annual growth of approximately **5.6%** indicates ongoing infrastructure upgrades, with large-scale investments aligning with government initiatives for digital inclusion.
 
-* **Gigabit Broadband:** Showed exponential growth, from 8.5% in 2019 to 70% in 2023—a 62% increase over five years. Significant increases in 2021 and 2022 (26.37% in one year) underscore the pandemic-driven urgency to upgrade networks to meet surging demand for remote work and education.
+* **Gigabit Broadband:** Showed exponential growth, from **8.5%** in **2019** to **70%** in **2023**—a **62%**increase over five years. Significant increases in **2021** and **2022** (**26.37% in one year**) underscore the pandemic-driven urgency to upgrade networks to meet surging demand for remote work and education.
 
-* **Full Fibre Availability:** A parallel growth to Gigabit broadband was observed, with availability increasing from 8.59% in 2019 to 47.6% in 2023. Full Fibre's increasing importance is evident in its role as the backbone for Gigabit-capable networks.
+* **Full Fibre Availability:** A parallel growth to Gigabit broadband was observed, with availability increasing from **8.59%** in **2019** to **47.6%** in **202**3. Full Fibre's increasing importance is evident in its role as the backbone for Gigabit-capable networks.
 
 <div align="center">
     <img src=".//trends_in_broadband_coverage_over_period.png" alt="Description of Image" width="85%">
@@ -164,28 +155,53 @@ Geographical challenges such as their remote locations and higher infrastructure
 
 ### Coverage Gaps
 
-* **Premises Below USO:** The percentage of premises unable to receive broadband speeds below 2Mbit/s, 5Mbit/s, and 10Mbit/s has steadily declined over the years. Premises below the 10Mbit/s threshold decreased from 2.1% in 2019 to 1.24% in 2023, highlighting ongoing progress but leaving notable gaps in underserved regions.
+* **Premises Below USO:** The percentage of premises unable to receive broadband speeds **below 2Mbit/s**, **5Mbit/s**, and **10Mbit/s** has **steadily declined** over the years. Premises below the **10Mbit/s** threshold **decreased from 2.1%** in **2019** to **1.24%** in **2023**, highlighting ongoing progress but leaving notable gaps in underserved regions.
 
 <div align="center">
     <img src="./trends_in_premises_unable_to_receive_low_broadband_speeds.png" alt="Description of Image" width="70%">
 </div>
 
-* **Islands and Remote Regions:** Island regions such as Orkney and Shetland face persistent challenges, with logistical and financial barriers to deploying high-speed broadband. These areas also report limited Full Fibre and Gigabit availability, reflecting infrastructure disparities.
+* **Islands and Remote Regions:** Island regions such as **Orkney** and **Shetland** face persistent challenges, with logistical and financial barriers to deploying high-speed broadband. These areas also report limited Full Fibre and Gigabit availability, reflecting infrastructure disparities.
 
 ### Observational Patterns
 
-* **Pandemic-Driven Trends:** The sharpest increases in high-speed broadband availability (e.g., Full Fibre and Gigabit) occurred between 2020 and 2022, during the COVID-19 pandemic.
+* **Pandemic-Driven Trends:** The **sharpest increases** in **high-speed broadband** availability (e.g., Full Fibre and Gigabit) occurred between **2020** and **2022**, during the COVID-19 pandemic.
 Factors contributing to this surge include remote work and education demands; reduced road traffic, facilitating quicker infrastructure deployments.
 
 * **Urban vs Rural Divide:** Urban areas consistently exhibit higher broadband availability due to cost-efficient infrastructure deployment. Rural areas, particularly in Scotland and Wales, lag significantly, underlining the need for targeted investments.
 
 * **Policy Impacts:** Initiatives such as the Universal Service Obligation (USO), launched in 2020, correlate with increased focus on underserved areas. Legislation and funding have accelerated improvements, particularly in regions previously unable to meet basic speed thresholds.
 
-* **Geographic Influence: Coastal and island regions face higher deployment costs, resulting in slower progress.
-* Infrastructure Focus: Investments are concentrated in urban areas, creating significant disparities.
+* **Geographic Influence:** Coastal and island regions face higher deployment costs, resulting in slower progress.
+  
+* **Infrastructure Focus**: Investments are concentrated in urban areas, creating significant disparities.
 
-Technological Trends:
-A clear shift toward next-generation broadband (Full Fibre and Gigabit), with slower improvements in older infrastructure like SFBB.
+* **Technological Trend**s: A clear shift toward next-generation broadband (Full Fibre and Gigabit), with slower improvements in older infrastructure like SFBB.
+
+### Actionable Insights
+#### 1. Accelerating Rural Connectivity
+
+Rural and island areas (e.g., Orkney, Isles of Scilly) lag in broadband availability due to logistical and financial barriers. Target these regions for prioritized funding and infrastructure investment. For example, a subsidy program for Full Fibre deployment in Orkney could reduce underserved premises by up to 16.7%.
+
+#### 2. Focusing on High-Growth Areas
+
+Regions like Kingston upon Hull and Coventry are nearing full Gigabit coverage, showcasing effective infrastructure models. Study and replicate their deployment strategies in other urban and suburban areas with medium coverage levels (e.g., York or Aberdeen).
+
+#### 3. Leveraging Public-Private Partnerships
+
+Gigabit broadband surged from 8.5% to 70% due to policy-driven investments and collaborations. Expand public-private partnerships, especially in regions with <30% coverage. Incentivize private providers with grants to invest in hard-to-reach areas.
+
+#### 4. Closing the Digital Divide
+
+Premises below the USO threshold have decreased but remain disproportionately high in remote locations. Introduce a phased investment plan to eliminate USO gaps by 2025, ensuring even the most underserved premises meet the 10Mbit/s minimum standard.
+
+#### 5. Tracking and Adapting
+
+Year-over-year growth in Full Fibre and Gigabit broadband correlates with evolving reporting standards and policy changes. Implement a centralized, real-time monitoring system for broadband metrics at the local authority level to identify underperforming regions and respond swiftly.
+
+#### 6. Pandemic Lessons for Rapid Deployment
+
+The COVID-19 pandemic accelerated infrastructure growth due to reduced road traffic and increased demand. Build on this momentum by scheduling future large-scale infrastructure projects during periods of minimal urban activity (e.g., holidays).
 
 ### Reccomendations
 
