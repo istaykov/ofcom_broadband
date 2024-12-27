@@ -1,20 +1,58 @@
 # Fixed Broadband Coverage Analysis (2019 - 2023)
 
-# Project Background
+## Project Background
 
-This project examines the state of fixed broadband coverage across the UK between 2019 and 2023. The aim is to explore regional disparities, identify trends in broadband availability, and the impact of infrastructure investments on access to high-speed internet. Key metrics include:
+This project analyses fixed broadband coverage across the UK from 2019 to 2023. By examining trends, regional disparities, and the impact of infrastructure investments, this study seeks to highlight patterns and gaps in broadband accesibility, contributing to efforts to bridge the digital divide. Key metrics include **Superfast Broadband (SFBB)**, **Ultrafast Broadband (UFBB)**, **Full Fibre**, and **Gigabit broadband coverage**. 
 
-* **Superfast Broadband (SFBB)** availability.
-* **Ultrafast Broadband (UFBB)** availability.
-* **Full Fibre and Gigabit Broadband** deployment.
+## Data Sources and Methodology
 
-Through this analysis, the project aims to identify patterns, gaps, and policy implications in broadband accessibility, contributing to efforts to bridge the digital divide.
+### Data Sources
 
-# Data Structure & Initial Checks
+The analysis is based on broadband coverage datasets provided by Ofcom, under the Open Government License v3.0. Data spans five years (2019-2023) and includes:
 
-**Data Sources:**
-* Fixed broadband coverage data was sourced from Ofcom datasets spanning 2019 to 2023.
-* The datasets include 374 local authorities in the UK, with 1,870 records after merging across five years.
+* Files: Yearly CSV datasets for 374 UK local authorities.
+* Total Records: 1,870 data points post-cleaning and integration.
+* Key Metrics: SFBB, UFBB, Full Fibre availability, and premises below Universal Service Obligation (USO).
+* Aggregation: Data collected from over 70 fixed network and fixed wireless access (FWA) providers.
+* Snapshots: Annual snapshots (e.g., September 2020, May, 2023) were used for uniform temporal analysis.
+
+### Limitations
+* Changes in reporting methods, such as the inability to identify superfast broadband coverage from FWA in rececnt years, limit direct year-over-year comparisons.
+* Some coverage metrics rely on provider-reported estimates, which may introduce minor innacuracies.
+
+
+**Key Columns in the Dataset**
+
+| Column Name                        | Description                                  | Relevance                           |
+|------------------------------------|----------------------------------------------|-------------------------------------|
+| `laua`                             | Local and unitary authority code             | Unique identifier for regions      |
+| `SFBB availability (% premises)`   | % of premises with broadband ≥30 Mbit/s     | Indicator of baseline connectivity |
+| `UFBB availability (% premises)`   | % of premises with broadband ≥100 Mbit/s    | Advanced connectivity measure      |
+| `Full Fibre availability (% premises)` | % of premises with full fibre broadband coverage | Infrastructure modernization metric |
+| `Premises below USO`               | % of premises below 10Mbit/s download speed | Highlights underserved areas       |
+
+
+**Methodology**
+1. **Data Import and Cleaning**
+ * Imported data from CSV files using **Python's Pandas**.
+ * Cleaned inconsistent column names and ambiguous data using custom Python scripts.
+ * Ensured all datasets included a year column and were standardised across years.
+ * Ensured consistent column naming and formatting.
+ * Addressed null values and outliers.
+ * Ensured data completeness and absence of duplicates.
+ * Verified data completeness by checking for missing values or anomalies.
+ * Extracted meaningful subsets for targeted analysis, such as Full Fibre availability and premises below USO.
+2. **Storage and Structure**
+* Cleaned data stored in a MongoDB database for accessbility.
+* Schema included key fields: broadband metrics, local authority details, and temporal indicators.
+3. **Exploratory Data Analysis (EDA)**
+* Utilised Python libraries (Matplotlib, Folium) to explore trends and visualise disparities.
+* Conducted grouping and aggregation to uncover temporal patterns in broadband availability.
+* Investigated trends in broadband availability and gaps.
+* Highlighted regional disparities through statistical summaries and visualisations.
+4. **Visualisation**
+* Developed maps to showcase regional gaps using Folium.
+* Created trend charts to illustrate growth in broadband types.
 
 **Initial Data Checks:**
 * **Consistency:**
@@ -26,11 +64,7 @@ Through this analysis, the project aims to identify patterns, gaps, and policy i
 * Columns were standardized to ensure compatibility across years.
 
 * **Data Cleaning Steps:**
-1. * **Initial Inspection:** Ensured data completeness and absence of duplicates.
-2. Removed inconsistencies in column naming and ambiguous data and ensured uniform formatting.
-3. Verified data completeness by checking for missing values or anomalies.
-4. Extracted meaningful subsets for targeted analysis, such as Full Fibre availability and premises below USO.
- 
+
 * **Storage:** Data was structured and stored in a MongoDB database for accessibility and further analysis. Columns included broadband availability metrics, local authority names and codes.
 * **Summary:** The dataset was analysed using Pandas to verify integrity, showing clean and usable records with proper alignment across years.
 
@@ -42,7 +76,7 @@ Through this analysis, the project aims to identify patterns, gaps, and policy i
 
 * Broadband availability across the UK has improved significantly between 2019 and 2023.
 * SFBB coverage grew from **93.62% in 2019** to **96.07% in 2023**.
-* UFBB availability grew significantly from **47% to 70%** over the same period.
+* UFBB availability grew significantly from **47% to 70%** over five years.
 * Full Fibre availability experienced a sharp increase, rising from **8.59% to 47.6%**.
 * Gigabit broadband availability showed the most dramatic growth, increasing from **8.5% to nearly 70%**, reflecting policy-driven investment.
 * Premises below USO declined substantially, reflecting improvements in access to basic broadband speeds.
