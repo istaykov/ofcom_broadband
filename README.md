@@ -125,8 +125,13 @@ The analysis further revealed a stark contrast in broadband coverage between urb
 * These disparities suggest a persistent gap in broadband accessibility, driven by the higher costs and logistical challenges of deploying infrastructure in less densely populated areas.
 
 <div align="center">
-    <img src="./UK_regional_map_for_premises_meeting_the_USO.jpg" alt="Description of Image" width="85%">
+    <img src="./UK_regional_map_for_premises_meeting_the_USO.jpg" alt="Description of Image" width="93%">
 </div>
+
+<div align="center">
+    <img src="./SFBB_vs_UFBB_UK.jpg" alt="Description of Image" width="95%">
+</div>
+
 
 1. #### Top-Performing Areas:
 * **Kingston upon Hull**: Nearly 100% coverage for Full Fibre and Gigabit broadband.
