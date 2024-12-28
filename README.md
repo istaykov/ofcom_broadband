@@ -11,6 +11,40 @@ This project analyses fixed broadband coverage in the UK from 2019 to 2023, exam
 
 This study aims to uncover patterns and gaps in broadband accessibility, contributing to efforts to bridge the digital divide.
 
+## Executive Summary
+
+### Overview of Findings
+
+#### National Trends:
+
+* Broadband availability across the UK has improved significantly between 2019 and 2023.
+* SFBB coverage grew from **93.62% in 2019** to **96.07% in 2023**.
+* UFBB availability grew significantly from **47% to 70%** over five years.
+* Full Fibre availability experienced a sharp increase, rising from **8.59% to 47.6%**.
+* Gigabit broadband availability showed the most dramatic growth, increasing from **8.5% to nearly 70%**, reflecting policy-driven investment.
+* Premises below USO declined substantially, reflecting improvements in access to basic broadband speeds.
+
+#### Regional Disparities:
+
+* Urban areas generally have higher broadband speeds and availability. Urban areas like **Birmingham** and **Leeds** excelled in USO compliance.
+* Rural areas, especially the **Orkney** and **Shetland Islands**, show significant gaps in coverage.
+* Areas like **Kingston upon Hull** and **Convetry** lead in Full Fibre and Gigabit coverage.
+* Rural and island regions such as **Orkney Islands** and **Isles of Scilly** remain underserved, with minimal Full Fibre and Gigabit access.
+* **Brighton**, despite its small geographic size, demonstrated superior broadband coverage.
+
+#### Underserved Communities:
+* **Orkney Islands**: SFBB availability improved from **65% in 2019** to **68.5% in 2023**, highlighting slow progress.
+* Premises below USO thresholds decreased significantly across all regions after 2020.
+* **Durham**, **Cornwall**, and **Buckinghamshire** showed lower broadband coverage rates compared to urban counterparts.
+
+#### Urban vs Rural Divide:
+
+* Urban areas such as **Brighton** benefit from concentrated infrastructure investments, while rural counterparts like **Lewes** lag significantly.
+
+#### Case Studies:
+* **Aberdeen City**: Full Fibre availability surged **6.5 times**, from **16,410 in 2019** to **107,315 in 2023**.
+* **York**: Showed a more modest increase of **1.47 times** in Full Fibre availability and a decline in matched premises by 1,966.
+
 ## Data Sources and Methodology
 
 ### Data Sources
@@ -58,40 +92,6 @@ The analysis is based on broadband coverage datasets provided by **Ofcom**, unde
 4. #### Visualisation
 * Developed maps to showcase regional gaps using **Folium**.
 * Created trend charts to illustrate growth in broadband types.
-
-## Executive Summary
-
-### Overview of Findings
-
-#### National Trends:
-
-* Broadband availability across the UK has improved significantly between 2019 and 2023.
-* SFBB coverage grew from **93.62% in 2019** to **96.07% in 2023**.
-* UFBB availability grew significantly from **47% to 70%** over five years.
-* Full Fibre availability experienced a sharp increase, rising from **8.59% to 47.6%**.
-* Gigabit broadband availability showed the most dramatic growth, increasing from **8.5% to nearly 70%**, reflecting policy-driven investment.
-* Premises below USO declined substantially, reflecting improvements in access to basic broadband speeds.
-
-#### Regional Disparities:
-
-* Urban areas generally have higher broadband speeds and availability. Urban areas like **Birmingham** and **Leeds** excelled in USO compliance.
-* Rural areas, especially the **Orkney** and **Shetland Islands**, show significant gaps in coverage.
-* Areas like **Kingston upon Hull** and **Convetry** lead in Full Fibre and Gigabit coverage.
-* Rural and island regions such as **Orkney Islands** and **Isles of Scilly** remain underserved, with minimal Full Fibre and Gigabit access.
-* **Brighton**, despite its small geographic size, demonstrated superior broadband coverage.
-
-#### Underserved Communities:
-* **Orkney Islands**: SFBB availability improved from **65% in 2019** to **68.5% in 2023**, highlighting slow progress.
-* Premises below USO thresholds decreased significantly across all regions after 2020.
-* **Durham**, **Cornwall**, and **Buckinghamshire** showed lower broadband coverage rates compared to urban counterparts.
-
-#### Urban vs Rural Divide:
-
-* Urban areas such as **Brighton** benefit from concentrated infrastructure investments, while rural counterparts like **Lewes** lag significantly.
-
-#### Case Studies:
-* **Aberdeen City**: Full Fibre availability surged **6.5 times**, from **16,410 in 2019** to **107,315 in 2023**.
-* **York**: Showed a more modest increase of **1.47 times** in Full Fibre availability and a decline in matched premises by 1,966.
 
 ## Insights Deep Dive
 
@@ -214,54 +214,50 @@ Factors contributing to this surge include remote work and education demands; re
 
 * **Policy Impacts:** Initiatives such as the Universal Service Obligation (USO), launched in 2020, correlate with increased focus on underserved areas. Legislation and funding have accelerated improvements, particularly in regions previously unable to meet basic speed thresholds.
 
-* **Geographic Influence:** Coastal and island regions face higher deployment costs, resulting in slower progress.
+* **Geographic Influence:** Coastal and island regions face higher deployment costs, resulting in slower progress and persistent disparities.
   
-* **Infrastructure Focus**: Investments are concentrated in urban areas, creating significant disparities.
+* **Infrastructure Focus**: nvestments are heavily concentrated in urban areas, creating significant disparities in broadband access. Rural and remote areas continue to lag behind due to logistical and financial challenges.
 
-* **Technological Trend**s: A clear shift toward next-generation broadband (Full Fibre and Gigabit), with slower improvements in older infrastructure like SFBB.
+* **Technological Trend**s: A clear shift toward next-generation broadband (Full Fibre and Gigabit), with slower improvements in older infrastructure like Superfast Broadband (SFBB).
 
 ### Actionable Insights
 #### 1. Accelerating Rural Connectivity
 
-Rural and island areas (e.g., Orkney, Isles of Scilly) lag in broadband availability due to logistical and financial barriers. Target these regions for prioritized funding and infrastructure investment. For example, a subsidy program for Full Fibre deployment in Orkney could reduce underserved premises by up to 16.7%.
+Target rural and island areas (e.g., Orkney, Isles of Scilly) for prioritized funding and infrastructure investment. For example, a subsidy program for Full Fibre deployment in Orkney could reduce underserved premises by up to 16.7%.
 
 #### 2. Focusing on High-Growth Areas
 
-Regions like Kingston upon Hull and Coventry are nearing full Gigabit coverage, showcasing effective infrastructure models. Study and replicate their deployment strategies in other urban and suburban areas with medium coverage levels (e.g., York or Aberdeen).
+Study and replicate deployment strategies from successful regions like Kingston upon Hull and Coventry in other urban and suburban areas with medium coverage levels (e.g., York or Aberdeen).
 
 #### 3. Leveraging Public-Private Partnerships
 
-Gigabit broadband surged from 8.5% to 70% due to policy-driven investments and collaborations. Expand public-private partnerships, especially in regions with <30% coverage. Incentivize private providers with grants to invest in hard-to-reach areas.
+Expand partnerships, especially in regions with <30% coverage. Incentivize private providers with grants to invest in hard-to-reach areas, ensuring effective collaboration and resource allocation.
 
 #### 4. Closing the Digital Divide
 
-Premises below the USO threshold have decreased but remain disproportionately high in remote locations. Introduce a phased investment plan to eliminate USO gaps by 2025, ensuring even the most underserved premises meet the 10Mbit/s minimum standard.
+Introduce a phased investment plan to eliminate USO gaps by 2025. This should focus on ensuring that even the most underserved premises meet the 10Mbit/s minimum standard.
 
 #### 5. Tracking and Adapting
 
-Year-over-year growth in Full Fibre and Gigabit broadband correlates with evolving reporting standards and policy changes. Implement a centralized, real-time monitoring system for broadband metrics at the local authority level to identify underperforming regions and respond swiftly.
+Implement a centralized, real-time monitoring system for broadband metrics at the local authority level. This will help identify underperforming regions and allow for swift, data-driven responses.
 
 #### 6. Pandemic Lessons for Rapid Deployment
 
-The COVID-19 pandemic accelerated infrastructure growth due to reduced road traffic and increased demand. Build on this momentum by scheduling future large-scale infrastructure projects during periods of minimal urban activity (e.g., holidays).
+Build on the infrastructure growth momentum observed during the pandemic by scheduling large-scale infrastructure projects during periods of minimal urban activity (e.g., holidays).
 
 ### Reccomendations
 
 * **Infrastructure Investments:** Prioritize underserved regions, particularly rural and island communities, to reduce digital inequality. Expand Full Fibre and Gigabit coverage to align with urban availability levels.
 
-* **Policy Initiatives:** Incentivize broadband providers to target remote areas. Implement subsidies or public-private partnerships for high-cost infrastructure projects.
+* **Policy Initiatives:** Incentivize broadband providers to target remote areas with subsidies or public-private partnerships for high-cost infrastructure projects. Introduce ambitious regional targets for UFBB and Gigabit broadband to bridge the digital divide.
 
-* **Monitoring and Reporting:** Establish regular updates to track progress and assess policy effectiveness. Enhance data granularity to understand local challenges better.
+* **Monitoring and Reporting:** Establish regular updates to track progress and assess policy effectiveness. Enhance data granularity to understand local challenges better and refine strategies accordingly.
 
-* Targeted Investments:
-Incentivize private companies to expand infrastructure in underserved regions.
-Provide subsidies or government-led initiatives for rural and island communities.
-Policy Adjustments:
-Set ambitious regional targets for UFBB and Gigabit broadband to bridge the digital divide.
-Regularly monitor and report progress to ensure accountability.
-Future Focus:
-Prioritize underserved regions to ensure equitable access to next-generation broadband.
-Expand public-private partnerships to accelerate infrastructure deployment.
+* **Targeted Investments:**
+Encourage private companies to expand infrastructure in underserved regions with government incentives or subsidies. Focus on high-cost, low-coverage areas to ensure equitable broadband access.
+
+* **Future Focus:**
+Prioritize underserved regions to ensure equitable access to next-generation broadband. Expand public-private partnerships to accelerate infrastructure deployment and achieve nationwide digital equity.
 
 ### Assumptions and Caveats
 
