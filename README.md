@@ -220,32 +220,32 @@ Factors contributing to this surge include remote work and education demands; re
 
 * **Technological Trend**s: A clear shift toward next-generation broadband (Full Fibre and Gigabit), with slower improvements in older infrastructure like Superfast Broadband (SFBB).
 
-### Actionable Insights
-#### 1. Accelerating Rural Connectivity
+## Actionable Insights
+### 1. Accelerating Rural Connectivity
 
 Target rural and island areas (e.g., Orkney, Isles of Scilly) for prioritized funding and infrastructure investment. For example, a subsidy program for Full Fibre deployment in Orkney could reduce underserved premises by up to 16.7%.
 
-#### 2. Focusing on High-Growth Areas
+### 2. Focusing on High-Growth Areas
 
 Study and replicate deployment strategies from successful regions like Kingston upon Hull and Coventry in other urban and suburban areas with medium coverage levels (e.g., York or Aberdeen).
 
-#### 3. Leveraging Public-Private Partnerships
+### 3. Leveraging Public-Private Partnerships
 
 Expand partnerships, especially in regions with <30% coverage. Incentivize private providers with grants to invest in hard-to-reach areas, ensuring effective collaboration and resource allocation.
 
-#### 4. Closing the Digital Divide
+### 4. Closing the Digital Divide
 
 Introduce a phased investment plan to eliminate USO gaps by 2025. This should focus on ensuring that even the most underserved premises meet the 10Mbit/s minimum standard.
 
-#### 5. Tracking and Adapting
+### 5. Tracking and Adapting
 
 Implement a centralized, real-time monitoring system for broadband metrics at the local authority level. This will help identify underperforming regions and allow for swift, data-driven responses.
 
-#### 6. Pandemic Lessons for Rapid Deployment
+### 6. Pandemic Lessons for Rapid Deployment
 
 Build on the infrastructure growth momentum observed during the pandemic by scheduling large-scale infrastructure projects during periods of minimal urban activity (e.g., holidays).
 
-### Reccomendations
+## Reccomendations
 
 * **Infrastructure Investments:** Prioritize underserved regions, particularly rural and island communities, to reduce digital inequality. Expand Full Fibre and Gigabit coverage to align with urban availability levels.
 
@@ -259,7 +259,7 @@ Encourage private companies to expand infrastructure in underserved regions with
 * **Future Focus:**
 Prioritize underserved regions to ensure equitable access to next-generation broadband. Expand public-private partnerships to accelerate infrastructure deployment and achieve nationwide digital equity.
 
-### Assumptions and Caveats
+## Assumptions and Caveats
 
 * **Data Accuracy:** Some data points, particularly from earlier years, rely on estimations (e.g., UFBB availability in 2019).
 
