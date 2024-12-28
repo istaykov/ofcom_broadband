@@ -74,14 +74,20 @@ The analysis is based on broadband coverage datasets provided by **Ofcom**, unde
 
 #### Regional Disparities:
 
-* Urban areas generally have higher broadband speeds and availability.
+* Urban areas generally have higher broadband speeds and availability. Urban areas like **Birmingham** and **Leeds** excelled in USO compliance.
 * Rural areas, especially the **Orkney** and **Shetland Islands**, show significant gaps in coverage.
 * Areas like **Kingston upon Hull** and **Convetry** lead in Full Fibre and Gigabit coverage.
 * Rural and island regions such as **Orkney Islands** and **Isles of Scilly** remain underserved, with minimal Full Fibre and Gigabit access.
+* **Brighton**, despite its small geographic size, demonstrated superior broadband coverage.
 
 #### Underserved Communities:
 * **Orkney Islands**: SFBB availability improved from **65% in 2019** to **68.5% in 2023**, highlighting slow progress.
 * Premises below USO thresholds decreased significantly across all regions after 2020.
+* **Durham**, **Cornwall**, and **Buckinghamshire** showed lower broadband coverage rates compared to urban counterparts.
+
+#### Urban vs Rural Divide:
+
+* Urban areas such as **Brighton** benefit from concentrated infrastructure investments, while rural counterparts like **Lewes** lag significantly.
 
 #### Case Studies:
 * **Aberdeen City**: Full Fibre availability surged **6.5 times**, from **16,410 in 2019** to **107,315 in 2023**.
@@ -90,6 +96,34 @@ The analysis is based on broadband coverage datasets provided by **Ofcom**, unde
 ## Insights Deep Dive
 
 ### Regional Observations:
+
+#### Regional Disparities
+
+The choropleth map visualization revealed significant regional disparities in broadband coverage, particularly in compliance with the Universal Service Obligation (USO).
+
+* **Top-Performing Areas**: Urban centers such as **Birmingham** and **Leeds** demonstrated exceptionally high compliance rates, with a large proportion of premises meeting USO criteria.
+
+* **Other High-Compliance Regions**: Areas such as **Durham**, **Cornwall**, **Buckinghamshire**, **Manchester**, **Liverpool**, **Sheffield**, **City of Edinburgh**, and **Glasgow City** also exhibited relatively strong broadband coverage compared to their neighbors.
+
+* **Lagging Regions**: Despite overall improvements, certain rural and peripheral areas still face significant gaps in coverage, indicating a need for targeted infrastructure investments.
+
+#### Dominance of Suboptimal Coverage
+
+The choropleth map predominantly displayed pale yellow-green hues, signaling widespread inadequacies in broadband infrastructure across many regions:
+
+* This visualization highlighted the dominance of **suboptimal broadband coverage** in numerous areas, emphasizing the pressing need for infrastructure upgrades to meet current and future demands.
+* While some progress has been observed, the prevalence of substandard broadband availability underscores the challenges in achieving nationwide digital equity.
+
+#### Urban vs. Rural Divide
+
+The analysis further revealed a stark contrast in broadband coverage between urban and rural areas:
+
+* **Urban Success Stories**: Smaller urban regions like Brighton exhibited superior broadband coverage despite their relatively limited geographic footprint.
+
+* **Rural Disparities**: Adjacent rural areas, such as Lewes, showed significantly lower compliance with USO standards, reflecting a broader trend of underinvestment in rural broadband infrastructure.
+  
+* These disparities suggest a persistent gap in broadband accessibility, driven by the higher costs and logistical challenges of deploying infrastructure in less densely populated areas.
+
 
 1. #### Top-Performing Areas:
 * **Kingston upon Hull**: Nearly 100% coverage for Full Fibre and Gigabit broadband.
@@ -229,8 +263,6 @@ Expand public-private partnerships to accelerate infrastructure deployment.
   
 * **Limitations of Percentage Metrics:** While percentages normalize data for comparison, they may mask absolute disparities in larger or denser regions.
 
-* External Influences:
-Urban redevelopment and demographic shifts (e.g., York) may impact broadband coverage trends.
-Policy Impacts:
+* **External Influences:** Urban redevelopment and demographic shifts (e.g., York) may impact broadband coverage trends.
 
-Changes in legislation (e.g., USO launch in 2020) influence trends but may not reflect immediate infrastructure changes.
+* **Policy Impacts**: Changes in legislation (e.g., USO launch in 2020) influence trends but may not reflect immediate infrastructure changes.
