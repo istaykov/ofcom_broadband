@@ -125,11 +125,11 @@ The analysis further revealed a stark contrast in broadband coverage between urb
 * These disparities suggest a persistent gap in broadband accessibility, driven by the higher costs and logistical challenges of deploying infrastructure in less densely populated areas.
 
 <div align="center">
-    <img src="./UK_regional_map_for_premises_meeting_the_USO.jpg" alt="Description of Image" width="93%">
+    <img src="./graphs/UK_regional_map_for_premises_meeting_the_USO.jpg" alt="Description of Image" width="93%">
 </div>
 
 <div align="center">
-    <img src="./SFBB_vs_UFBB_UK.jpg" alt="Description of Image" width="95%">
+    <img src="./graphs/SFBB_vs_UFBB_UK.jpg" alt="Description of Image" width="95%">
 </div>
 
 
@@ -138,11 +138,11 @@ The analysis further revealed a stark contrast in broadband coverage between urb
 * **Coventry**: Demonstrated significant growth in UFBB and Gigabit broadband.
 
 <div align="center">
-    <img src="./top_bottom_regions_uffbb_full_fibre_availability_2023.png.jpg" alt="Description of Image" width="85%">
+    <img src="./graphs/top_bottom_regions_uffbb_full_fibre_availability_2023.png.jpg" alt="Description of Image" width="85%">
 </div>
 
 <div align="center">
-    <img src="./top_10_areas_for_ufbb_gigabit_availabiity.png" alt="Description of Image" width="85%">
+    <img src="./graphs/top_10_areas_for_ufbb_gigabit_availabiity.png" alt="Description of Image" width="85%">
 </div>
 
 2. #### Least-Performing Areas:
@@ -150,7 +150,7 @@ The analysis further revealed a stark contrast in broadband coverage between urb
 * **Copeland and Orkney Islands**: Limited infrastructure progress, reflecting logistical challenges.
 
 <div align="center">
-    <img src="./bottom_10_areas_for_ufbb_gigabit_availability.png" alt="Description of Image" width="85%">
+    <img src="./graphs/bottom_10_areas_for_ufbb_gigabit_availability.png" alt="Description of Image" width="85%">
 </div>
 
 ### Broadband in Underserved Areas:
@@ -162,20 +162,20 @@ The analysis further revealed a stark contrast in broadband coverage between urb
 * **Aberdeen City:** **Full Fibre availability** surged by **6.5 times**, growing from **16,410 premises** in **2019** to **107,315** in **2023**. Corresponding decreases were observed in premises below the Universal Service Obligation (USO) threshold, dropping nearly **5 times (189 in 2019 to 40 in 2023)**. This growth indicates robust infrastructure investment and a targeted effort to expand access to high-speed internet.
 
 <div align="center">
-    <img src="./aberdeen_city_full_fibre_vs_below_uso.jpg" alt="Description of Image" width="85%">
+    <img src="./graphs/aberdeen_city_full_fibre_vs_below_uso.jpg" alt="Description of Image" width="85%">
 </div>
 
 * **York:** In contrast to Aberdeen, York showed modest growth in broadband infrastructure. Full Fibre availability increased by just **1.47 times** (from **43,077 premises** in **201**9 to **63,736** in **2023**). Interestingly, York experienced a reduction in matched premises, with 1,966 fewer properties between 2019 and 2023. This may be due to urban redevelopment or shifting population dynamics.
 
 <div align="center">
-    <img src="./full_fibre_availability_york_matched_premises.jpg" alt="Description of Image" width="100%">
+    <img src="./graphs/full_fibre_availability_york_matched_premises.jpg" alt="Description of Image" width="100%">
 </div>
 
 * **Orkney and Shetland Islands:** These island regions lag significantly, with **16.7%** and **16%** of premises, respectively, unable to receive **10Mbit/s** broadband speeds as of 2023.
 Geographical challenges such as their remote locations and higher infrastructure costs likely contribute to this disparity.
 
 <div align="center">
-    <img src="./top_10_areas_below_USO.png" alt="Description of Image" width="85%">
+    <img src="./graphs/top_10_areas_below_USO.png" alt="Description of Image" width="85%">
 </div>
 
 ### Broadband Type Analysis
@@ -191,7 +191,7 @@ Geographical challenges such as their remote locations and higher infrastructure
 * **Full Fibre Availability:** A parallel growth to Gigabit broadband was observed, with availability increasing from **8.59%** in **2019** to **47.6%** in **202**3. Full Fibre's increasing importance is evident in its role as the backbone for Gigabit-capable networks.
 
 <div align="center">
-    <img src=".//trends_in_broadband_coverage_over_period.png" alt="Description of Image" width="85%">
+    <img src="./graphs/trends_in_broadband_coverage_over_period.png" alt="Description of Image" width="85%">
 </div>
 
 
@@ -200,7 +200,7 @@ Geographical challenges such as their remote locations and higher infrastructure
 * **Premises Below USO:** The percentage of premises unable to receive broadband speeds **below 2Mbit/s**, **5Mbit/s**, and **10Mbit/s** has **steadily declined** over the years. Premises below the **10Mbit/s** threshold **decreased from 2.1%** in **2019** to **1.24%** in **2023**, highlighting ongoing progress but leaving notable gaps in underserved regions.
 
 <div align="center">
-    <img src="./trends_in_premises_unable_to_receive_low_broadband_speeds.png" alt="Description of Image" width="70%">
+    <img src="./graphs/trends_in_premises_unable_to_receive_low_broadband_speeds.png" alt="Description of Image" width="70%">
 </div>
 
 * **Islands and Remote Regions:** Island regions such as **Orkney** and **Shetland** face persistent challenges, with logistical and financial barriers to deploying high-speed broadband. These areas also report limited Full Fibre and Gigabit availability, reflecting infrastructure disparities.
