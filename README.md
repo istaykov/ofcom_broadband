@@ -1,5 +1,28 @@
 # Fixed Broadband Coverage Analysis (2019 - 2023)
 
+## Table of Content
+
+1. [Project Background](#project-background)
+2. [Executive Summary](#executive-summary)
+3. [Data Sources and Methodology](#data-sources-and-methodology)
+   - [Data Sources](#data-sources)
+   - [Limitations](#limitations)
+   - [Key Columns in the Dataset](#key-columns-in-the-dataset)
+   - [Methodology](#methodology)
+4. [Insights Deep Dive](#insights-deep-dive)
+   - [Regional Observations](#regional-observations)
+   - [Broadband in Underserved Areas](#broadband-in-underserved-areas)
+   - [Regional Trends](#regional-trends)
+   - [Broadband Type Analysis](#broadband-type-analysis)
+   - [Coverage Gaps](#coverage-gaps)
+   - [Observational Patterns](#observational-patterns)
+5. [Actionable Insights](#actionable-insights)
+6. [Recommendations](#recommendations)
+7. [Assumptions and Caveats](#assumptions-and-caveats)
+   - [Assumptions](#assumptions)
+   - [Caveats](#caveats)
+
+
 ## Project Background
 
 This project analyses fixed broadband coverage in the UK from 2019 to 2023, examining trends, regional disparities and the impact of infrastructure investments. Key metrics include:
@@ -245,7 +268,7 @@ Implement a centralized, real-time monitoring system for broadband metrics at th
 
 Build on the infrastructure growth momentum observed during the pandemic by scheduling large-scale infrastructure projects during periods of minimal urban activity (e.g., holidays).
 
-## Reccomendations
+## Recomendations
 
 * **Infrastructure Investments:** Prioritize underserved regions, particularly rural and island communities, to reduce digital inequality. Expand Full Fibre and Gigabit coverage to align with urban availability levels.
 
