@@ -19,8 +19,6 @@
 5. [Actionable Insights](#actionable-insights)
 6. [Recommendations](#recommendations)
 7. [Assumptions and Caveats](#assumptions-and-caveats)
-   - [Assumptions](#assumptions)
-   - [Caveats](#caveats)
 
 
 ## Project Background
