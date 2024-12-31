@@ -17,7 +17,7 @@
    - [Coverage Gaps](#coverage-gaps)
    - [Observational Patterns](#observational-patterns)
 5. [Actionable Insights](#actionable-insights)
-6. [Recommendations](#recommendations)
+6. [Recommendations](#recomendations)
 7. [Assumptions and Caveats](#assumptions-and-caveats)
 
 
